@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Database Schema Diagram for Pharmacy Drug Management System -->
+  
+  <!-- Styles -->
+  <style>
+    .table { fill: #f0f8ff; stroke: #4682b4; stroke-width: 2; }
+    .table-header { fill: #4682b4; }
+    .table-title { fill: white; font-family: Arial; font-size: 14px; font-weight: bold; }
+    .table-content { font-family: Arial; font-size: 12px; }
+    .pk { font-weight: bold; }
+    .fk { font-style: italic; fill: #0000cd; }
+    .relationship { stroke: #4682b4; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    .label { font-family: Arial; font-size: 12px; fill: #4682b4; }
+  </style>
+  
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4682b4" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Pharmacy Drug Management System - Database Schema</text>
+  
+  <!-- Customer Table -->
+  <g transform="translate(50,70)">
+    <rect class="table" width="180" height="160" rx="5" ry="5" />
+    <rect class="table-header" width="180" height="30" rx="5" ry="5" />
+    <text x="90" y="20" class="table-title" text-anchor="middle">CUSTOMER</text>
+    <text x="10" y="50" class="table-content pk">uid (PK)</text>
+    <text x="10" y="70" class="table-content">pass</text>
+    <text x="10" y="90" class="table-content">fname</text>
+    <text x="10" y="110" class="table-content">lname</text>
+    <text x="10" y="130" class="table-content">email</text>
+    <text x="10" y="150" class="table-content">address</text>
+    <text x="10" y="170" class="table-content">phno</text>
+  </g>
+  
+  <!-- Seller Table -->
+  <g transform="translate(50,280)">
+    <rect class="table" width="180" height="120" rx="5" ry="5" />
+    <rect class="table-header" width="180" height="30" rx="5" ry="5" />
+    <text x="90" y="20" class="table-title" text-anchor="middle">SELLER</text>
+    <text x="10" y="50" class="table-content pk">sid (PK)</text>
+    <text x="10" y="70" class="table-content">sname</text>
+    <text x="10" y="90" class="table-content">pass</text>
+    <text x="10" y="110" class="table-content">address</text>
+    <text x="10" y="130" class="table-content">phno</text>
+  </g>
+  
+  <!-- Product Table -->
+  <g transform="translate(300,70)">
+    <rect class="table" width="180" height="140" rx="5" ry="5" />
+    <rect class="table-header" width="180" height="30" rx="5" ry="5" />
+    <text x="90" y="20" class="table-title" text-anchor="middle">PRODUCT</text>
+    <text x="10" y="50" class="table-content pk">pid (PK)</text>
+    <text x="10" y="70" class="table-content pk">pname (UK)</text>
+    <text x="10" y="90" class="table-content">manufacturer</text>
+    <text x="10" y="110" class="table-content">mfg</text>
+    <text x="10" y="130" class="table-content">exp</text>
+    <text x="10" y="150" class="table-content">price</text>
+  </g>
+  
+  <!-- Inventory Table -->
+  <g transform="translate(300,280)">
+    <rect class="table" width="180" height="100" rx="5" ry="5" />
+    <rect class="table-header" width="180" height="30" rx="5" ry="5" />
+    <text x="90" y="20" class="table-title" text-anchor="middle">INVENTORY</text>
+    <text x="10" y="50" class="table-content pk fk">pid (PK, FK)</text>
+    <text x="10" y="70" class="table-content fk">pname (FK)</text>
+    <text x="10" y="90" class="table-content">quantity</text>
+    <text x="10" y="110" class="table-content pk fk">sid (PK, FK)</text>
+  </g>
+  
+  <!-- Orders Table -->
+  <g transform="translate(550,150)">
+    <rect class="table" width="180" height="160" rx="5" ry="5" />
+    <rect class="table-header" width="180" height="30" rx="5" ry="5" />
+    <text x="90" y="20" class="table-title" text-anchor="middle">ORDERS</text>
+    <text x="10" y="50" class="table-content pk">oid (PK)</text>
+    <text x="10" y="70" class="table-content fk">pid (FK)</text>
+    <text x="10" y="90" class="table-content fk">sid (FK)</text>
+    <text x="10" y="110" class="table-content fk">uid (FK)</text>
+    <text x="10" y="130" class="table-content">orderdatetime</text>
+    <text x="10" y="150" class="table-content">quantity</text>
+    <text x="10" y="170" class="table-content">price</text>
+  </g>
+  
+  <!-- Relationships -->
+  <!-- Product to Inventory -->
+  <path class="relationship" d="M390,210 L390,280" />
+  <text x="400" y="245" class="label">1:N</text>
+  
+  <!-- Seller to Inventory -->
+  <path class="relationship" d="M230,330 L300,330" />
+  <text x="265" y="320" class="label">1:N</text>
+  
+  <!-- Product to Orders -->
+  <path class="relationship" d="M480,140 L550,180" />
+  <text x="510" y="150" class="label">1:N</text>
+  
+  <!-- Seller to Orders -->
+  <path class="relationship" d="M230,280 C230,230 500,230 550,230" />
+  <text x="390" y="220" class="label">1:N</text>
+  
+  <!-- Customer to Orders -->
+  <path class="relationship" d="M230,150 C350,150 500,150 550,170" />
+  <text x="390" y="140" class="label">1:N</text>
+  
+  <!-- Legend -->
+  <g transform="translate(600,450)">
+    <rect width="180" height="80" fill="#f0f8ff" stroke="#4682b4" stroke-width="1" rx="5" ry="5" />
+    <text x="10" y="20" font-family="Arial" font-size="12" font-weight="bold">Legend:</text>
+    <text x="20" y="40" font-family="Arial" font-size="12" font-weight="bold">PK</text>
+    <text x="45" y="40" font-family="Arial" font-size="12">- Primary Key</text>
+    <text x="20" y="60" font-family="Arial" font-size="12" font-style="italic" fill="#0000cd">FK</text>
+    <text x="45" y="60" font-family="Arial" font-size="12">- Foreign Key</text>
+    <text x="20" y="80" font-family="Arial" font-size="12" font-weight="bold">UK</text>
+    <text x="45" y="80" font-family="Arial" font-size="12">- Unique Key</text>
+  </g>
+</svg>

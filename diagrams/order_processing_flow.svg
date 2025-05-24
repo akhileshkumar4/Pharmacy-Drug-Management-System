@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Order Processing Flow Diagram for Pharmacy Drug Management System -->
+  
+  <!-- Styles -->
+  <style>
+    .process { fill: #e6f3ff; stroke: #4682b4; stroke-width: 2; }
+    .database { fill: #ffe6e6; stroke: #b44646; stroke-width: 2; }
+    .trigger { fill: #fff2cc; stroke: #d6b656; stroke-width: 2; }
+    .title { font-family: Arial; font-size: 14px; font-weight: bold; text-anchor: middle; }
+    .subtitle { font-family: Arial; font-size: 12px; text-anchor: middle; }
+    .arrow { stroke: #666666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .label { font-family: Arial; font-size: 12px; fill: #666666; text-anchor: middle; }
+    .note { font-family: Arial; font-size: 11px; fill: #666666; }
+  </style>
+  
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Pharmacy Drug Management System - Order Processing Flow</text>
+  
+  <!-- Customer Order Placement -->
+  <g transform="translate(100,100)">
+    <rect class="process" width="150" height="60" rx="10" ry="10" />
+    <text x="75" y="35" class="title">Customer</text>
+    <text x="75" y="55" class="subtitle">Places Order</text>
+  </g>
+  
+  <!-- Order Validation -->
+  <g transform="translate(100,200)">
+    <rect class="process" width="150" height="60" rx="10" ry="10" />
+    <text x="75" y="35" class="title">System Validates</text>
+    <text x="75" y="55" class="subtitle">Order & Stock</text>
+  </g>
+  
+  <!-- Order Record Creation -->
+  <g transform="translate(100,300)">
+    <rect class="process" width="150" height="60" rx="10" ry="10" />
+    <text x="75" y="35" class="title">Create Order</text>
+    <text x="75" y="55" class="subtitle">Record</text>
+  </g>
+  
+  <!-- Orders Table -->
+  <g transform="translate(100,400)">
+    <rect class="database" width="150" height="60" rx="10" ry="10" />
+    <text x="75" y="35" class="title">Orders Table</text>
+    <text x="75" y="55" class="subtitle">Insert Record</text>
+  </g>
+  
+  <!-- Trigger: Update Time -->
+  <g transform="translate(350,350)">
+    <polygon class="trigger" points="0,30 75,0 150,30 75,60" />
+    <text x="75" y="25" class="title">Trigger</text>
+    <text x="75" y="45" class="subtitle">updatetime</text>
+  </g>
+  
+  <!-- Trigger: Inventory Update -->
+  <g transform="translate(350,450)">
+    <polygon class="trigger" points="0,30 75,0 150,30 75,60" />
+    <text x="75" y="25" class="title">Trigger</text>
+    <text x="75" y="45" class="subtitle">inventorytrigger</text>
+  </g>
+  
+  <!-- Inventory Update -->
+  <g transform="translate(600,400)">
+    <rect class="database" width="150" height="60" rx="10" ry="10" />
+    <text x="75" y="35" class="title">Inventory Table</text>
+    <text x="75" y="55" class="subtitle">Update Stock</text>
+  </g>
+  
+  <!-- Order Confirmation -->
+  <g transform="translate(600,200)">
+    <rect class="process" width="150" height="60" rx="10" ry="10" />
+    <text x="75" y="35" class="title">Order</text>
+    <text x="75" y="55" class="subtitle">Confirmation</text>
+  </g>
+  
+  <!-- Order History -->
+  <g transform="translate(600,100)">
+    <rect class="process" width="150" height="60" rx="10" ry="10" />
+    <text x="75" y="35" class="title">View in</text>
+    <text x="75" y="55" class="subtitle">Order History</text>
+  </g>
+  
+  <!-- Arrows -->
+  <path class="arrow" d="M175,160 L175,200" />
+  <path class="arrow" d="M175,260 L175,300" />
+  <path class="arrow" d="M175,360 L175,400" />
+  <path class="arrow" d="M250,430 L350,450" />
+  <path class="arrow" d="M250,380 L350,380" />
+  <path class="arrow" d="M500,450 L600,430" />
+  <path class="arrow" d="M675,400 L675,260" />
+  <path class="arrow" d="M675,200 L675,160" />
+  <path class="arrow" d="M600,230 L250,230" />
+  
+  <!-- Notes -->
+  <g transform="translate(350,100)">
+    <rect width="200" height="80" fill="#f9f9f9" stroke="#cccccc" stroke-width="1" rx="5" ry="5" />
+    <text x="10" y="20" class="note">1. Customer selects products</text>
+    <text x="10" y="40" class="note">2. Enters quantity to purchase</text>
+    <text x="10" y="60" class="note">3. System checks availability</text>
+    <text x="10" y="80" class="note">4. Order is processed</text>
+  </g>
+  
+  <g transform="translate(350,500)">
+    <rect width="200" height="80" fill="#f9f9f9" stroke="#cccccc" stroke-width="1" rx="5" ry="5" />
+    <text x="10" y="20" class="note">Database Triggers:</text>
+    <text x="10" y="40" class="note">• updatetime: Sets current</text>
+    <text x="10" y="55" class="note">  timestamp for new orders</text>
+    <text x="10" y="75" class="note">• inventorytrigger: Decreases</text>
+    <text x="10" y="90" class="note">  product quantity in inventory</text>
+  </g>
+  
+  <!-- Stored Procedure Note -->
+  <g transform="translate(600,500)">
+    <rect width="150" height="80" fill="#f9f9f9" stroke="#cccccc" stroke-width="1" rx="5" ry="5" />
+    <text x="75" y="20" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Stored Procedures</text>
+    <text x="75" y="40" font-family="Arial" font-size="11" text-anchor="middle">• getorders</text>
+    <text x="75" y="60" font-family="Arial" font-size="11" text-anchor="middle">• getsellerorders</text>
+    <text x="75" y="80" font-family="Arial" font-size="11" text-anchor="middle">(For viewing order history)</text>
+  </g>
+</svg>

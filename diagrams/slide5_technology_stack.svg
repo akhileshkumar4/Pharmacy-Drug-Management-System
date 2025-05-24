@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Technology Stack Slide for Pharmacy Drug Management System -->
+  
+  <!-- Styles -->
+  <style>
+    .title { font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: middle; }
+    .subtitle { font-family: Arial; font-size: 18px; text-anchor: middle; fill: #4682b4; }
+    .layer-title { font-family: Arial; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+    .tech-text { font-family: Arial; font-size: 14px; text-anchor: middle; }
+    .frontend { fill: #6baed6; stroke: #4682b4; stroke-width: 2; }
+    .backend { fill: #9ecae1; stroke: #4682b4; stroke-width: 2; }
+    .database { fill: #c6dbef; stroke: #4682b4; stroke-width: 2; }
+    .server { fill: #deebf7; stroke: #4682b4; stroke-width: 2; }
+    .tech-box { fill: white; stroke: #4682b4; stroke-width: 1; rx: 5; ry: 5; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="white" />
+  
+  <!-- Title -->
+  <text x="400" y="60" class="title">Pharmacy Drug Management System</text>
+  <text x="400" y="90" class="subtitle">Technology Stack</text>
+  
+  <!-- Decorative Elements -->
+  <rect x="150" y="110" width="500" height="2" fill="#4682b4" />
+  
+  <!-- Frontend Layer -->
+  <g transform="translate(100, 150)">
+    <rect width="600" height="80" class="frontend" rx="10" ry="10" />
+    <text x="300" y="30" class="layer-title">PRESENTATION LAYER</text>
+    
+    <rect x="50" y="45" width="100" height="25" class="tech-box" />
+    <text x="100" y="62" class="tech-text">HTML5</text>
+    
+    <rect x="175" y="45" width="100" height="25" class="tech-box" />
+    <text x="225" y="62" class="tech-text">CSS3</text>
+    
+    <rect x="300" y="45" width="100" height="25" class="tech-box" />
+    <text x="350" y="62" class="tech-text">JavaScript</text>
+    
+    <rect x="425" y="45" width="100" height="25" class="tech-box" />
+    <text x="475" y="62" class="tech-text">JSP</text>
+  </g>
+  
+  <!-- Backend Layer -->
+  <g transform="translate(100, 250)">
+    <rect width="600" height="80" class="backend" rx="10" ry="10" />
+    <text x="300" y="30" class="layer-title">APPLICATION LAYER</text>
+    
+    <rect x="50" y="45" width="100" height="25" class="tech-box" />
+    <text x="100" y="62" class="tech-text">Java</text>
+    
+    <rect x="175" y="45" width="100" height="25" class="tech-box" />
+    <text x="225" y="62" class="tech-text">Servlets</text>
+    
+    <rect x="300" y="45" width="100" height="25" class="tech-box" />
+    <text x="350" y="62" class="tech-text">JDBC</text>
+    
+    <rect x="425" y="45" width="100" height="25" class="tech-box" />
+    <text x="475" y="62" class="tech-text">JavaBeans</text>
+  </g>
+  
+  <!-- Database Layer -->
+  <g transform="translate(100, 350)">
+    <rect width="600" height="80" class="database" rx="10" ry="10" />
+    <text x="300" y="30" class="layer-title">DATA LAYER</text>
+    
+    <rect x="175" y="45" width="100" height="25" class="tech-box" />
+    <text x="225" y="62" class="tech-text">MySQL</text>
+    
+    <rect x="300" y="45" width="100" height="25" class="tech-box" />
+    <text x="350" y="62" class="tech-text">SQL</text>
+  </g>
+  
+  <!-- Server Layer -->
+  <g transform="translate(100, 450)">
+    <rect width="600" height="80" class="server" rx="10" ry="10" />
+    <text x="300" y="30" class="layer-title">SERVER ENVIRONMENT</text>
+    
+    <rect x="175" y="45" width="100" height="25" class="tech-box" />
+    <text x="225" y="62" class="tech-text">Apache Tomcat</text>
+    
+    <rect x="300" y="45" width="100" height="25" class="tech-box" />
+    <text x="350" y="62" class="tech-text">J2EE</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="400" y="560" font-family="Arial" font-size="12" text-anchor="middle">Slide 5 of 10</text>
+</svg>

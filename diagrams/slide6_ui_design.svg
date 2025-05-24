@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- User Interface Design Slide for Pharmacy Drug Management System -->
+  
+  <!-- Styles -->
+  <style>
+    .title { font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: middle; }
+    .subtitle { font-family: Arial; font-size: 18px; text-anchor: middle; fill: #4682b4; }
+    .section-title { font-family: Arial; font-size: 16px; font-weight: bold; fill: #4682b4; }
+    .description { font-family: Arial; font-size: 14px; }
+    .screenshot-frame { fill: none; stroke: #4682b4; stroke-width: 2; }
+    .screenshot-label { font-family: Arial; font-size: 14px; font-weight: bold; text-anchor: middle; }
+    .note { font-family: Arial; font-size: 12px; font-style: italic; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="white" />
+  
+  <!-- Title -->
+  <text x="400" y="60" class="title">Pharmacy Drug Management System</text>
+  <text x="400" y="90" class="subtitle">User Interface Design</text>
+  
+  <!-- Decorative Elements -->
+  <rect x="150" y="110" width="500" height="2" fill="#4682b4" />
+  
+  <!-- UI Description -->
+  <text x="400" y="140" class="section-title" text-anchor="middle">Key UI Screens</text>
+  <text x="400" y="165" class="description" text-anchor="middle">The system features intuitive interfaces for both customers and sellers</text>
+  
+  <!-- Screenshot Placeholders with References to Actual Screenshots -->
+  <!-- These would be replaced with actual screenshots in a real presentation -->
+  
+  <!-- Login Screen -->
+  <g transform="translate(100, 190)">
+    <rect width="180" height="120" class="screenshot-frame" />
+    <text x="90" y="60" class="screenshot-label">Login Screen</text>
+    <text x="90" y="80" class="note" text-anchor="middle">(Login.png)</text>
+  </g>
+  
+  <!-- Customer Homepage -->
+  <g transform="translate(310, 190)">
+    <rect width="180" height="120" class="screenshot-frame" />
+    <text x="90" y="60" class="screenshot-label">Customer Homepage</text>
+    <text x="90" y="80" class="note" text-anchor="middle">(CustomerHomepage.png)</text>
+  </g>
+  
+  <!-- Vendor Homepage -->
+  <g transform="translate(520, 190)">
+    <rect width="180" height="120" class="screenshot-frame" />
+    <text x="90" y="60" class="screenshot-label">Vendor Homepage</text>
+    <text x="90" y="80" class="note" text-anchor="middle">(VendorHomepage.png)</text>
+  </g>
+  
+  <!-- Buy Product Screen -->
+  <g transform="translate(100, 340)">
+    <rect width="180" height="120" class="screenshot-frame" />
+    <text x="90" y="60" class="screenshot-label">Buy Product</text>
+    <text x="90" y="80" class="note" text-anchor="middle">(Buy 1.png)</text>
+  </g>
+  
+  <!-- Seller Registration -->
+  <g transform="translate(310, 340)">
+    <rect width="180" height="120" class="screenshot-frame" />
+    <text x="90" y="60" class="screenshot-label">Seller Registration</text>
+    <text x="90" y="80" class="note" text-anchor="middle">(SellerRegister.png)</text>
+  </g>
+  
+  <!-- Restock Inventory -->
+  <g transform="translate(520, 340)">
+    <rect width="180" height="120" class="screenshot-frame" />
+    <text x="90" y="60" class="screenshot-label">Restock Inventory</text>
+    <text x="90" y="80" class="note" text-anchor="middle">(Restock.png)</text>
+  </g>
+  
+  <!-- UI Design Notes -->
+  <g transform="translate(100, 490)">
+    <text class="section-title">UI Design Principles:</text>
+    <text x="0" y="25" class="description">• Clean, intuitive navigation</text>
+    <text x="0" y="45" class="description">• Consistent layout across all pages</text>
+    <text x="350" y="25" class="description">• Responsive design for various devices</text>
+    <text x="350" y="45" class="description">• Clear visual hierarchy and feedback</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="400" y="560" font-family="Arial" font-size="12" text-anchor="middle">Slide 6 of 10</text>
+</svg>

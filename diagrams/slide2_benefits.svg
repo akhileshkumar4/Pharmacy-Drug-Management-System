@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="50" font-family="Arial" font-size="24" fill="#2c3e50" text-anchor="middle" font-weight="bold">Key Benefits of Pharmacy Drug Management System</text>
+    
+    <!-- Benefit Hexagons -->
+    <!-- Efficiency -->
+    <g transform="translate(200,150)">
+        <path d="M 100,0 L 150,28.87 L 150,86.6 L 100,115.47 L 50,86.6 L 50,28.87 Z" fill="#3498db" opacity="0.9"/>
+        <text x="100" y="65" font-family="Arial" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle">Improved Efficiency</text>
+    </g>
+    
+    <!-- Accuracy -->
+    <g transform="translate(400,150)">
+        <path d="M 100,0 L 150,28.87 L 150,86.6 L 100,115.47 L 50,86.6 L 50,28.87 Z" fill="#2ecc71" opacity="0.9"/>
+        <text x="100" y="65" font-family="Arial" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle">Enhanced Accuracy</text>
+    </g>
+    
+    <!-- Cost Savings -->
+    <g transform="translate(600,150)">
+        <path d="M 100,0 L 150,28.87 L 150,86.6 L 100,115.47 L 50,86.6 L 50,28.87 Z" fill="#e74c3c" opacity="0.9"/>
+        <text x="100" y="65" font-family="Arial" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle">Cost Savings</text>
+    </g>
+    
+    <!-- Inventory Control -->
+    <g transform="translate(200,300)">
+        <path d="M 100,0 L 150,28.87 L 150,86.6 L 100,115.47 L 50,86.6 L 50,28.87 Z" fill="#9b59b6" opacity="0.9"/>
+        <text x="100" y="65" font-family="Arial" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle">Inventory Control</text>
+    </g>
+    
+    <!-- Customer Service -->
+    <g transform="translate(400,300)">
+        <path d="M 100,0 L 150,28.87 L 150,86.6 L 100,115.47 L 50,86.6 L 50,28.87 Z" fill="#f1c40f" opacity="0.9"/>
+        <text x="100" y="65" font-family="Arial" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle">Customer Service</text>
+    </g>
+    
+    <!-- Compliance -->
+    <g transform="translate(600,300)">
+        <path d="M 100,0 L 150,28.87 L 150,86.6 L 100,115.47 L 50,86.6 L 50,28.87 Z" fill="#1abc9c" opacity="0.9"/>
+        <text x="100" y="65" font-family="Arial" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle">Regulatory Compliance</text>
+    </g>
+    
+    <!-- Benefit Details -->
+    <g transform="translate(50,450)">
+        <text x="0" y="0" font-family="Arial" font-size="12" fill="#34495e">
+            • Streamlined order processing and inventory management
+            <tspan x="0" dy="20">• Reduced medication errors and improved patient safety</tspan>
+            <tspan x="0" dy="20">• Automated inventory tracking and reordering</tspan>
+            <tspan x="0" dy="20">• Enhanced data security and regulatory compliance</tspan>
+            <tspan x="0" dy="20">• Improved customer satisfaction and service delivery</tspan>
+        </text>
+    </g>
+</svg>

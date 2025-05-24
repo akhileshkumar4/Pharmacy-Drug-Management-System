@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Key Features Slide for Pharmacy Drug Management System -->
+  
+  <!-- Styles -->
+  <style>
+    .title { font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: middle; }
+    .subtitle { font-family: Arial; font-size: 18px; text-anchor: middle; fill: #4682b4; }
+    .feature-title { font-family: Arial; font-size: 16px; font-weight: bold; fill: #4682b4; }
+    .feature-desc { font-family: Arial; font-size: 14px; }
+    .feature-box { fill: #f0f8ff; stroke: #4682b4; stroke-width: 2; rx: 10; ry: 10; }
+    .icon-circle { fill: #4682b4; opacity: 0.8; }
+    .icon-text { font-family: Arial; font-size: 14px; font-weight: bold; fill: white; text-anchor: middle; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="white" />
+  
+  <!-- Title -->
+  <text x="400" y="60" class="title">Pharmacy Drug Management System</text>
+  <text x="400" y="90" class="subtitle">Key Features</text>
+  
+  <!-- Decorative Elements -->
+  <rect x="150" y="110" width="500" height="2" fill="#4682b4" />
+  
+  <!-- Feature 1: User Management -->
+  <g transform="translate(100, 150)">
+    <rect width="280" height="120" class="feature-box" />
+    <circle cx="30" cy="30" r="20" class="icon-circle" />
+    <text x="30" y="35" class="icon-text">1</text>
+    <text x="70" y="35" class="feature-title">User Management</text>
+    <text x="70" y="60" class="feature-desc">• Separate interfaces for customers and sellers</text>
+    <text x="70" y="85" class="feature-desc">• Secure authentication system</text>
+    <text x="70" y="110" class="feature-desc">• User profile management</text>
+  </g>
+  
+  <!-- Feature 2: Inventory Management -->
+  <g transform="translate(420, 150)">
+    <rect width="280" height="120" class="feature-box" />
+    <circle cx="30" cy="30" r="20" class="icon-circle" />
+    <text x="30" y="35" class="icon-text">2</text>
+    <text x="70" y="35" class="feature-title">Inventory Management</text>
+    <text x="70" y="60" class="feature-desc">• Real-time stock tracking</text>
+    <text x="70" y="85" class="feature-desc">• Automatic inventory updates</text>
+    <text x="70" y="110" class="feature-desc">• Low stock alerts</text>
+  </g>
+  
+  <!-- Feature 3: Product Catalog -->
+  <g transform="translate(100, 300)">
+    <rect width="280" height="120" class="feature-box" />
+    <circle cx="30" cy="30" r="20" class="icon-circle" />
+    <text x="30" y="35" class="icon-text">3</text>
+    <text x="70" y="35" class="feature-title">Product Catalog</text>
+    <text x="70" y="60" class="feature-desc">• Comprehensive product listings</text>
+    <text x="70" y="85" class="feature-desc">• Product details with expiry tracking</text>
+    <text x="70" y="110" class="feature-desc">• Manufacturer information</text>
+  </g>
+  
+  <!-- Feature 4: Order Processing -->
+  <g transform="translate(420, 300)">
+    <rect width="280" height="120" class="feature-box" />
+    <circle cx="30" cy="30" r="20" class="icon-circle" />
+    <text x="30" y="35" class="icon-text">4</text>
+    <text x="70" y="35" class="feature-title">Order Processing</text>
+    <text x="70" y="60" class="feature-desc">• Streamlined checkout process</text>
+    <text x="70" y="85" class="feature-desc">• Order history tracking</text>
+    <text x="70" y="110" class="feature-desc">• Automated database triggers</text>
+  </g>
+  
+  <!-- Feature 5: Reporting -->
+  <g transform="translate(260, 450)">
+    <rect width="280" height="80" class="feature-box" />
+    <circle cx="30" cy="30" r="20" class="icon-circle" />
+    <text x="30" y="35" class="icon-text">5</text>
+    <text x="70" y="35" class="feature-title">Reporting</text>
+    <text x="70" y="60" class="feature-desc">• Sales and inventory reports</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="400" y="560" font-family="Arial" font-size="12" text-anchor="middle">Slide 4 of 10</text>
+</svg>
