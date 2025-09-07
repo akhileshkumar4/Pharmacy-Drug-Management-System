@@ -32,5 +32,6 @@ This system is aimed at pharmacy staff and administrators to efficiently manage 
 ---
 
 ##  Project Structure- Pharmacy-Drug-Management-System
-<img width="415" height="555" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/ec4c9b4b-9aac-406c-a721-541b2321e9dd" />
+<img width="415" height="343" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/0eb20d00-50a7-49ad-bd21-74e18343855b" />
+
 
